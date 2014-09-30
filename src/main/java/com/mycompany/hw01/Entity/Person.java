@@ -15,8 +15,7 @@ import javax.persistence.Table;
  *
  * @author kika
  */
-@Entity
-@Table(name="SimplePerson")
+@Entity(name="SimplePerson")
 public class Person {
     @Id
     @GeneratedValue
@@ -47,6 +46,9 @@ public class Person {
             return false;
         }
         return true;
+    }
+
+    public Person() {
     }
 
     
